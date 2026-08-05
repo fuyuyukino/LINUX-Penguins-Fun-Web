@@ -25,7 +25,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 0.01px dotted red;
 }
 
 html, body {
@@ -110,9 +109,13 @@ body {
   font-size: calc(var(--h5) + 0.3rem);
   border: 1px solid var(--primary-color);
   background-color: var(--second-color);
-  color: white;
   border-radius: 12px;
   padding: 10px 16px;
+}
+
+.hero a {
+  color: white;
+  text-decoration: none;
 }
 
 .hero button:hover {
@@ -247,6 +250,10 @@ body {
 
 
 /* == WHEN == */
+.when h3 {
+  font-size: calc(var(--h3) + 10rem);
+  text-align: center;
+}
 
 
 /* == FOOTER == */
