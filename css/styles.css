@@ -25,6 +25,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 0.01px dotted red;
 }
 
 html, body {
@@ -84,24 +85,18 @@ body {
 }
 
 /* == HERO == */
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  height: 100vh;
+  min-height: 90vh;
   gap: 10px;
 }
 
 .hero h1 {
   font-size: calc(var(--h3) + 0.5rem);
+  text-align: center;
 }
 
 .hero p {
@@ -111,7 +106,7 @@ main {
 }
 
 .hero button {
-  display: inline-block;
+  display: block;
   font-size: calc(var(--h5) + 0.3rem);
   border: 1px solid var(--primary-color);
   background-color: var(--second-color);
@@ -127,28 +122,70 @@ main {
 }
 
 /* == ABOUT US == */
-.about {
+.main:not(.hero) {
+  display: block;
+  height: 100%;
+}
+
+.about, .system, .department, .faq, .when {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  gap: 10px;
+  height: 100%;
+  gap: 20px;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
 }
 
 .about p {
   text-align: center;
+  margin-top: -1rem;
 }
 
 .about .img {
-  height: 200px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
 .about .img img {
+  max-height: 180px;
   border: 1px solid var(--second-color);
   border-radius: 12px;
+}
+
+/* == SYSTEM == */
+.unosystem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.duosystem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+/* == DEPARTMENT == */
+
+/* == FAQ == */
+
+
+/* == WHEN == */
+
+
+/* == FOOTER == */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--second-color);
+  color: white;
+  overflow-x: hidden;
+  padding: 10px 32px;
 }
