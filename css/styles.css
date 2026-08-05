@@ -161,17 +161,87 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  width: max-content;
+  gap: 8rem;
+  animation: scroll 30s linear infinite;
 }
 
-.duosystem {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
+.block {
+  min-width: 200px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 2px #0d1527;
+}
+
+.pow, .sec, .sys, .int, .fst, .hon {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.pow {
+  background-color: var(--amber);
+}
+
+.sec {
+  background-color: var(--cyan);
+}
+
+.sys {
+  background-color: var(--magenta);
+}
+
+.int {
+  background-color: var(--green);
+}
+
+.fst {
+  background-color: var(--red);
+}
+
+.hon {
+  background-color: var(--violet);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  } to {
+    transform: translateX(-100%);
+  }
 }
 
 /* == DEPARTMENT == */
+.department p {
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.main-dpt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.dpt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 200px;
+  min-height: 200px;
+  text-align: center;
+  padding: 24px 16px;
+  border: 2px solid var(--second-color);
+  border-radius: 12px;
+  color: white;
+  background-color: var(--second-color)
+}
 
 /* == FAQ == */
 
